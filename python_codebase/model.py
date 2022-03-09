@@ -7,10 +7,6 @@ class model:
     def __init__(self, fileName, sheetName):
         self.fileName = fileName
         self.data = pd.read_excel(fileName, sheetName)
-        
-        # checking that fileName and sheetName are strings (exception handling)
-        if (type(fileName) != str) or (type(sheetName) != str):
-            raise TypeError("File name sheet name both need to be type String")
 
 
     def trimData(self, cols):
@@ -29,10 +25,6 @@ class model:
         # get rid of rows with zeros in any column
         for col in cols:
             self.data = self.data[self.data[col] != 0]
-            
-        # checking that cols is a list (exception handling)
-        if not isinstance(cols, list):
-            raise TypeError("Columns need to be in a List")
 
 
     def getData(self):
@@ -75,9 +67,7 @@ class model:
         self.T = tree.DecisionTreeClassifier(max_depth = maxDepth)
         self.T.fit(self.X_train, self.y_train)
         
-        # checking that targetCol is string, testSize is float, and maxDepth is int (exception handling)
-        if type(targetCol) != str:
-            raise TypeError("Target column needs to be a string")
+        # checking that testSize is float, and maxDepth is int (exception handling)
         if type(testSize) != float:
             raise TypeError("Test size needs to be type float")
         if type(maxDepth) != int:

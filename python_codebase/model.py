@@ -1,5 +1,4 @@
 import pandas as pd
-from matplotlib import pyplot as plt
 from sklearn import tree, preprocessing
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -99,19 +98,5 @@ class model:
         '''
         print("The score for the training data is:", self.T.score(self.X_train, self.y_train))
         print("The score for the testing data is:", self.T.score(self.X_test, self.y_test))
-
-
-    def visualizeTree(self):
-        '''
-        Shows a visual model of the generated tree
-
-        Args:
-            none
-
-        Return:
-            none
-        '''
-        fig, ax = plt.subplots(1, figsize = (20, 20))
-        tree.plot_tree(self.T, filled = True, feature_names = self.X.columns)
 
 

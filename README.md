@@ -14,11 +14,21 @@ This project aims to use information regarding the type of energy production and
 
 ### Instructions for package requirements
 
+Run ```conda create --name NEWENV --file requirements.txt```
+
 ### Description of demo file
+
+
 
 ### Scope/limitations
 
+We have taken only data of places where all 3 sources are generated. This is because for cases where no data is available, the data shows "0". This can be confused with places that DO have available data, but in actuality, have no sources of energy generated.
+
+Some ideas would be to incorporate other columns of data into our prediction. The model we have generated seems to be relatively inaccurate which suggests that it may be difficult to predict economic factors based on source energy generation.
+
 ### License and terms of use
+
+MIT license
 
 ### References and acknowledgement
 

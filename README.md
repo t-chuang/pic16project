@@ -18,7 +18,7 @@ Run ```conda create --name NEWENV --file requirements.txt```
 
 ### Description of demo file
 
-The demo file is in the form of a Jupyter notebook. Individuals code cells can be run and markdown cells contain explanations of the code. The process of creating our model occurs step by step to take the data to form a decision tree.
+The demo file is in the form of a Jupyter notebook. Individual code cells can be run and markdown cells contain explanations of the code. The process of creating our model occurs step by step to take the data to form a decision tree.
 
 Below is a preview of the data we will be working with.
 

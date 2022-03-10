@@ -18,7 +18,17 @@ Run ```conda create --name NEWENV --file requirements.txt```
 
 ### Description of demo file
 
+The demo file is in the form of a Jupyter notebook. Individuals code cells can be run and markdown cells contain explanations of the code. The process of creating our model occurs step by step to take the data to form a decision tree.
 
+Below is a preview of the data we will be working with.
+
+![Data preview](/images/dataframe.png)
+
+This is one example of a tree we have generated given max depth and other parameters.
+
+![Tree](/images/tree.png)
+
+In general, we find that our model has overfitting for trees that contain higher max depth and is not accurate overall. Results are shown in the visualization of our decision tree. Further potential extensions on our project is discussed under Scope and Limitations.
 
 ### Scope/limitations
 

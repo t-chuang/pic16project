@@ -28,7 +28,7 @@ This is one example of a tree we have generated given max depth and other parame
 
 ![Tree](/images/tree.png)
 
-In general, we find that our model has overfitting for trees that contain higher max depth and is not accurate overall. Results are shown in the visualization of our decision tree. Further potential extensions on our project is discussed under Scope and Limitations.
+In general, we find that our model has overfitting issues using the chosen predictor variables. Using sources of energy does not appear to be a good way of determining the economic status of a region. Results are shown in the visualization of our decision tree. Further potential extensions on our project is discussed under Scope and Limitations.
 
 ### Scope/limitations
 
